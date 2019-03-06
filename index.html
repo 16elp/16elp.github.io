@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Erin Peterson</title>
+    <link href="css/site.css" rel="stylesheet" />
+
+    <style>
+
+        body {
+            background-color: #ffb3b3;
+        }
+
+        .c2{
+            padding-left:50%;
+        }
+        ul {
+            z-index:2;
+            opacity: 1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: bold PingFang SC, sans-serif;
+            font-size: 120%;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+        }
+
+        li {
+            z-index: 2;
+            opacity: 1;
+            float: left;
+
+        }
+
+        li a {
+                z-index:2;
+                opacity: 1;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px 50px;
+                text-decoration: none;
+            }
+
+         li a:hover:not(.active) {
+                z-index: 2;
+                opacity: 1;
+                background-color: #ffb3b3;
+                color: #333;
+                height: 30px; 
+
+            }
+
+        .active {
+            opacity: 1;
+            background-color: #1a1a1a;
+        }
+
+        .name {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps; 
+            text-align: center;
+            font-size: 112px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            position: fixed;
+            top: 35%;
+            left: 5%; 
+            color: #1a1a1a;
+        }
+        
+        .home {
+            left: 500px;
+            display: block;
+            text-align: center;
+            font-family: PingFang SC, sans-serif;
+            font-variant: normal;
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin-bottom: 10%;
+            line-height: 140%;
+            color: #333;
+            padding-left: 600px;
+            padding-right:30px;
+            padding-bottom:100px;
+
+        }
+
+        .abouth {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 80px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            top: 500%;
+            left: 42.2%;
+            color: #1a1a1a;
+            padding-left:600px;
+
+        }
+
+        .aboutsha {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 30px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            color: white;
+            padding-left:600px;
+            padding-top: 10px;
+        }
+
+        .aboutshb {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 30px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            color: white;
+            padding-left: 600px;
+            padding-top: 10px;
+        }
+
+        .aboutshc {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 30px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            color: white;
+            padding-left: 600px;
+            padding-top: 10px;
+        }
+
+        .abouta {
+            text-align: justify;
+            display: block;
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            padding-left: 600px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom:10px;
+        }
+
+        .aboutb {
+            text-align: justify;
+            display: block;
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            padding-left: 600px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+        }
+
+        .aboutc {
+            text-align: justify;
+            display: block;
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            padding-left: 600px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 100px;
+        }
+
+        .experienceh {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 80px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            color: #1a1a1a;
+            padding-left: 600px;
+        }
+
+        .projectsh {
+            font-family: PingFang SC, sans-serif;
+            font-variant: small-caps;
+            font-size: 80px;
+            letter-spacing: 3px;
+            line-height: 110%;
+            color: #1a1a1a;
+            padding-left: 600px;
+        }
+       
+        img.a {
+            border-radius: 0%;
+            z-index: 1;
+            padding-left: 845px;
+            padding-top:105px;
+            padding-bottom:40px;
+         
+        }
+
+        img.b {
+            z-index: 1;
+            padding-left: 600px;
+        }
+
+        .boxedh1 {
+            font-family: PingFang SC, sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: white;
+            padding-left: 600px;
+        }
+
+        .boxedw1 {
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: white;
+            text-align: justify;
+            padding-left: 600px;
+            padding-bottom: 20px;
+        }
+
+        .boxedw1special {
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: white;
+            text-align: justify;
+            padding-left: 600px;
+            padding-bottom: 100px;
+        }
+
+        .boxedh2 {
+            font-family: PingFang SC, sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            padding-left: 600px;
+        }
+
+        .boxedw2 {
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            text-align: justify;
+            padding-left: 600px;
+            padding-bottom: 20px;
+        }
+
+
+        .boxedw2special {
+            font-family: PingFang SC, sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 140%;
+            color: #333;
+            text-align: justify;
+            padding-left: 600px;
+            padding-bottom:100px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <body>
+        <main>
+
+            <!--Navigation Bar-->
+            <ul>
+                <li><a href="#home">home</a></li>
+
+                <li><a href="#about">about</a></li>
+
+                <li><a href="#experience">experience</a></li>
+
+                <li><a href="#projects">projects</a></li>
+
+                <li><a href="https://drive.google.com/file/d/1rEh2QkOCo--IGCAhL1So8Gy4YGk9byn3/view?ths=true" target="_blank">resume</a></li>
+
+                <li>
+                    <a href="mailto:16elp@queensu.ca">
+                        <img src="email.png" alt="email"
+                             style="width:30px;height:30px;left:980px">
+                    </a>
+                <li>
+                    <a href="https://www.facebook.com/erin.peterson.520" target="blank">
+                        <img src="facebook.png" alt="email"
+                             style="width:30px;height:30px;left:980px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/erin-peterson-27b3b4154/" target="blank">
+                        <img src="linked.png" alt="email"
+                             style="width:30px;height:30px;left:980px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/erin_pete/" target="blank">
+                        <img src="insta.png" alt="email"
+                             style="width:25px;height:25px;left:980px">
+                    </a>
+                </li>
+            </ul>
+
+
+            <div id="c2">
+                <!--title-->
+                <div class="name">
+                  
+                    <div>Erin </br> Peterson </div>
+                </div>
+
+            <div id="2">
+                <!--home paragraph and headshot-->
+
+                <div id="home">
+                    <img class="a" src="headshot5.jpg" width="300" height="200"/>
+
+                    <div class="home">
+                        Hello! I am a Computer Engineering Student at Queen's University. I am passionate about technology and how
+                        it can implemented in and used to advance every industry.
+                    </div>
+                </div>
+
+                <!--about section-->
+                <div id="about">
+                    <div class="abouth"> about </div>
+                    <div class="aboutsha">NOW</div>
+                    <div class="abouta">
+                        I am a computer engineering student at Queen's University, planning on
+                        specializing in software engineering. I have gained a variety of
+                        experience through course work, including programming in C, Java, VHDL,
+                        and Assembley languages. I have an understanding of data structures, as
+                        well as the workings of a computer. Through extracurriculars I have gained
+                        experience programming in Python and HTML, as well as working with neural
+                        networks and machine intelligence.
+                    </div>
+                    <div class="aboutshb">FUTURE</div>
+                    <div class="aboutb">
+                        I will be pursuing an education focused on software development and machine/deep
+                        learning. I am also planning to continue with my extra curriculars, programming
+                        artifiial intelligence, and web development. I will also continue to be involved in
+                        Engineers Without Borders, and DECA. Elective courses taken will be in the
+                        realm of business, finance, and leadership. I hope to work in a job that merges the
+                        realms of business and artificial intelligence.
+                    </div>
+                    <div class="aboutshc">HOBBIES</div>
+                    <div class="aboutc">
+                        I am not only passionate about technological developments, but also business,
+                        and our greater community. I am currently the Co-Chair of DECA Queen's, a
+                        comprehensive business club, as well as the community team member on Queen's
+                        Engineers without boarders. I love going to the gym, as well as getting exercise
+                        outdoors by hiking, swimming, or biking! I participate in triathalons with my dad,
+                        and love spending time with my family.
+                    </div>
+                </div>
+
+
+                <!--experience section-->
+                <div id="experience">
+                    <div class="experienceh"> experience </div>
+
+                    <img class="b" src="city.png" width="100" height="100" />
+                    <div class="boxedh1">
+                        Engineering Student for the City of Kingston's Traffic Division
+                    </div>
+                    <div class="boxedw1">
+                        </br>Summer internship involving traffic counts, traffic analysis, data input, data   </br>
+                        analysis, signal timings, writing council reports, responding to inquiries,</br> and general traffic
+                        engineering duties.
+
+                    </div>
+                    <img class="b" src="qmind.png" width="100" height="100" />
+                    <div class="boxedh1">
+                        Queen's Machine Intelligence Neuroevolution Design Team
+                    </div>
+                    <div class="boxedw1">
+                        </br>Club where members take on artificial intelligence challenges, and gain </br>
+                        practical exposure to the machine learning lifecycle. Currently utilizing </br>
+                        a Long-Short Term Neural Netowrk to create a stock price predictor.
+                    </div>
+                    <img class="b" src="deca.png" width="100" height="100" />
+                    <div class="boxedh1">
+                        DECA Queen's
+                    </div>
+                    <div class="boxedw1">
+                        </br>Placed first internationally for the Financial Literacy category. Founder </br>
+                        of the Kingston Financial Literacy network. Presented to math teachers</br> across Ontario at the OAME conference. Current Co-Chair of DECA Queen’s.
+                    </div>
+                    <img class="b" src="city.png" width="100" height="100" />
+                    <div class="boxedh1">
+                        Senior Dockhand/Cashier for the City of Kingston's Marina
+                    </div>
+                    <div class="boxedw1special">
+                        </br>Seasonal full-time position involving the management of boat reservation </br>
+                        systems and docking practices, marina safety, customer service as an </br> ambassador
+                        of the City of Kingston, and cash handling.
+                    </div>
+                </div>
+
+
+                <!--projects section-->
+                <div id="projects" class="a">
+                    <div class="projectsh"> projects </div>
+
+                    <img class="b" src="network.png" width="100" height="100" />
+                    <div class="boxedh2">
+                        Stock Price Predictor - Neural Netowrk
+                    </div>
+                    <div class="boxedw2">
+                        </br>Long-Short Term Neural Netowrk coded in Python utilized to predict stock </br>
+                        prices. Data was collected from Yahoo financed and refined in order to fit</br> into
+                        the network. I self taught python, and created this outside of school.
+                    </div>
+
+                    <img class="b" src="comp.png" width="100" height="100" />
+                    <div class="boxedh2">
+                        Personal Website
+                    </div>
+                    <div class="boxedw2">
+                        </br>Personal website created using HTML and CSS. I am Self taught and utilized </br>
+                        online resources in order to complete this project. I am alwyas expanding </br>
+                        and looking for ways to this project.
+                    </div>
+
+                    <img class="b" src="gear.ico" width="100" height="100" />
+                    <div class="boxedh2">
+                        Mechatronics Project
+                    </div>
+                    <div class="boxedw2">
+                        </br> I am both wiring and coding a robot, in Arduino, in order to complete an </br>
+                        obstacle course. Hardware used includes IR sensors, force sensors, wheel </br>
+                        encoders, and bumpers.
+                    </div>
+
+                    <img class="b" src="book.png" width="100" height="100" />
+                    <div class="boxedh2">
+                        In-School Assignments
+                    </div>
+                    <div class="boxedw2special">
+                        </br>I have completed many school assignments in the languages of C and
+                        Java. </br> Noteable assignments include a birthday guessing game. Both</br>
+                        object oriented programming used, as well as not.
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </main>
+        <script src="lib/jquery.min.js"></script>
+        <script src="js/calc.js"></script>
+        <script src="js/site.js"></script>
+    </body>
+</html>
